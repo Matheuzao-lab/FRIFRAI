@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #ff4500, #ff8c00);
+    color: #fff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1f1f1f;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+/* Layout Flexbox */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+.main-content {
+    flex: 3;
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #252525;
+    padding: 1.5rem;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+/* Estilização dos Conteúdos */
+h2 {
+    color: #ff8c00;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ff4500;
+    padding-bottom: 0.3rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.featured-img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+    object-fit: cover;
+}
+
+blockquote {
+    background-color: #2a2a2a;
+    border-left: 5px solid #ff4500;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    font-style: italic;
+    color: #cccccc;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #0a0a0a;
+    color: #888888;
+    margin-top: 2rem;
+}
+
+/* Layout Responsivo (Desktop) */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+}
